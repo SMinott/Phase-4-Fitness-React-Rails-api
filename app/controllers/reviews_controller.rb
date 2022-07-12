@@ -1,4 +1,5 @@
 class ReviewsController < ApplicationController
+    before_action :review_find, except: [:index, :create]
 
     def index
         reviews = Review.all

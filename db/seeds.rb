@@ -14,14 +14,14 @@ c2 = Coach.create(
 a1 = Activity.create(
     event: "Yoga",
     description: "Yoga offers physical and mental health benefits for people of all ages. For those going through an illness, recovering from surgery or living with a chronic condition, yoga can become an integral part of your treatment and potentially hasten healing.",
-    location: "Santa Barbara CA",
+    location: "Santa Barbara, CA",
     image_activity: "https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.pngmart.com%2Ffiles%2F8%2FYoga-Pose-PNG-Transparent-Background.png&imgrefurl=https%3A%2F%2Fwww.pngmart.com%2Fimage%2F130427&tbnid=huIJdGZdjOxkJM&vet=12ahUKEwi2i8iH-_D4AhWFlFMKHckQChgQMygmegUIARCuAg..i&docid=PMtR2D-SXh8NnM&w=948&h=723&q=Yoga%2C%20png&ved=2ahUKEwi2i8iH-_D4AhWFlFMKHckQChgQMygmegUIARCuAg",
     coach_id: c1.id
 )
 a2 = Activity.create(
     event: "Body Building",
     description: "Bodybuilding is the use of progressive resistance exercise to control and develop one's muscles by muscle hypertrophy for aesthetic purposes. It is distinct from similar activities such as powerlifting because it focuses on physical appearance instead of strength.",
-    location: "Brooklyn NY",
+    location: "Brooklyn, NY",
     image_activity: "https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.pngmart.com%2Ffiles%2F8%2FYoga-Pose-PNG-Transparent-Background.png&imgrefurl=https%3A%2F%2Fwww.pngmart.com%2Fimage%2F130427&tbnid=huIJdGZdjOxkJM&vet=12ahUKEwi2i8iH-_D4AhWFlFMKHckQChgQMygmegUIARCuAg..i&docid=PMtR2D-SXh8NnM&w=948&h=723&q=Yoga%2C%20png&ved=2ahUKEwi2i8iH-_D4AhWFlFMKHckQChgQMygmegUIARCuAg",
     coach_id: c2.id
 )

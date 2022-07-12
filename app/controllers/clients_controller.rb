@@ -1,12 +1,13 @@
 class ClientsController < ApplicationController
 
+    before_action :client_find, except: [:index, :create]
+
     def index
         clients = Client.all
         render json: clients, status: :ok
     end
 
     def show
-        client = client_find
         render json: client, status: :ok
     end
 
@@ -16,12 +17,10 @@ class ClientsController < ApplicationController
     end
 
     def update
-        client = client_find
         client.update!(client_params)
     end
 
     def delete
-        client = client_find
         client.destroy
         head :no_content
     end
