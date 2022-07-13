@@ -2,7 +2,8 @@ import './App.css';
 import React, {useState, useEffect } from 'react'
 import { Routes, Route, Link} from "react-router-dom"
 import Home from './Components/Home'
-import ActivityContainer from './Components/ActivityContainer';
+import ActivityContainer from './Components/ActivityContainer'
+// import {FaStar} from 'react-icons/fa'
 
 
 function App() {
@@ -16,26 +17,20 @@ function App() {
 
   return (
     <div className="App">
-    <h1>CHOOSE YOUR FITNESS</h1>
+      <h1>PERSONLAIZE FITNESS</h1>
 
-    <nav>
-      <ul>
-        <li> <Link to='/'> Home </Link> </li>
-        <li> <Link to='/activities'> Activities </Link> </li>
-      </ul>
-        
-    </nav>
-    <Routes>
-      <Route path= '/' element= {<Home/>} />
-      <Route path= '/activities' element= {<ActivityContainer activityList={activityList} />} />
-  
-  
-    </Routes>
+      <nav>
+        <ul className='nav-link'>
+          <li> <Link to='/'> Home </Link> </li>
+          <li> <Link to='/activities'> Activities </Link> </li>
+        </ul>
+      </nav>
+
+      <Routes>
+        <Route path= '/' element= {<Home/>} />
+        <Route path= '/activities' element= {<ActivityContainer activityList={activityList} />} />
+      </Routes>
     </div>
-
-    
-
-
   );
 }
 

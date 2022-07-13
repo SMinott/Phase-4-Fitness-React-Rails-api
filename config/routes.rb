@@ -3,7 +3,8 @@ Rails.application.routes.draw do
   resources :reviews
   #All CRUD for clients
   resources :clients
-  resources :activities, only: [:index, :show]
+  #All CRUD for activities
+  resources :activities
   resources :coaches, only: [:index, :show]
   
 

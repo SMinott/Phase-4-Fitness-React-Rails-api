@@ -7,8 +7,7 @@ class ReviewsController < ApplicationController
     end
 
     def show
-        review = review_find
-        render json: review, status: :ok
+        render json: review_find, status: :ok
     end
 
     def create
@@ -17,20 +16,18 @@ class ReviewsController < ApplicationController
     end
 
     def update
-        review = review_find
-        review.update!(review_params)
+        review_find.update!(review_params)
     end
 
-    def delete
-        review = review_find
-        review.destroy
+    def destroy
+        review_find.destroy
         head :no_content
     end
 
     private
 
     def review_params
-        params.permit(:title,:detail, :score, :activity_id, :review_id)
+        params.permit(:title,:detail, :score, :activity_id, :client_id)
     end
 
     def review_find

@@ -10,7 +10,8 @@ function ActivityContainer( {activityList} ) {
 
   return (
     <main>
-      <ul>
+      {/* <p>Choose one or more fitness events that you would like to participate in.</p> */}
+      <ul className='activity-container'>
        {renderActivities}
       </ul>
     </main>

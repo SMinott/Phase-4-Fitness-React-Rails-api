@@ -6,9 +6,9 @@ function ActivityCard( {item} ) {
 
   return (
     <li>
-    <div>
+    <div className="activity-card">
       <h1> {event} </h1>
-      <img src = {image_activity} alt={event} />
+      <img src = {image_activity} alt={event} className='activity-image' />
       <p> {description} </p>
       <h5> {location} </h5>
 

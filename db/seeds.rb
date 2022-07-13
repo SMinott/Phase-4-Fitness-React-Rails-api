@@ -25,6 +25,13 @@ a2 = Activity.create(
     image_activity: "https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.pngmart.com%2Ffiles%2F8%2FYoga-Pose-PNG-Transparent-Background.png&imgrefurl=https%3A%2F%2Fwww.pngmart.com%2Fimage%2F130427&tbnid=huIJdGZdjOxkJM&vet=12ahUKEwi2i8iH-_D4AhWFlFMKHckQChgQMygmegUIARCuAg..i&docid=PMtR2D-SXh8NnM&w=948&h=723&q=Yoga%2C%20png&ved=2ahUKEwi2i8iH-_D4AhWFlFMKHckQChgQMygmegUIARCuAg",
     coach_id: c2.id
 )
+a3 = Activity.create(
+    event: "Power Lifting",
+    description: "Powerlifting is a strength sport that consists of three attempts at maximal weight on three lifts: squat, bench press, and deadlift. As in the sport of Olympic weightlifting, it involves the athlete attempting a maximal weight single-lift effort of a barbell loaded with weight plates.",
+    location: "Queens, NY",
+    image_activity: "https://www.google.com/imgres?imgurl=https%3A%2F%2Fi.insider.com%2F5a5c995728eecc26008b4e8d%3Fwidth%3D700&imgrefurl=https%3A%2F%2Fwww.businessinsider.com%2Fhow-to-start-lifting-weights-2018-6&tbnid=prHFWmtZHVsU6M&vet=10CNgBEDMoxgFqFwoTCIipyvbk9PgCFQAAAAAdAAAAABAE..i&docid=kXIC6F7GxFQICM&w=700&h=525&itg=1&q=power%20lifting%2C%20png&ved=0CNgBEDMoxgFqFwoTCIipyvbk9PgCFQAAAAAdAAAAABAE",
+    coach_id: c2.id
+)
 client1 = Client.create(
     first_name: "Serene",
     last_name: "Tempest",

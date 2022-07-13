@@ -8,7 +8,7 @@ class ClientsController < ApplicationController
     end
 
     def show
-        render json: client, status: :ok
+        render json: client_find, status: :ok
     end
 
     def create
@@ -17,11 +17,11 @@ class ClientsController < ApplicationController
     end
 
     def update
-        client.update!(client_params)
+        client_find.update!(client_params)
     end
 
-    def delete
-        client.destroy
+    def destroy
+        client_find.destroy
         head :no_content
     end
 
